@@ -1,21 +1,32 @@
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
-public class Feature_UC2_AddPassengerBogies {
+class UC3_BogieSet {
 
     public static void main(String[] args) {
 
-        List<String> bogies = new ArrayList<>();
+        Set<String> bogieSet = new HashSet<>();
 
-        bogies.add("Sleeper");
-        bogies.add("AC Chair");
-        bogies.add("First Class");
+        System.out.println("Adding Bogie IDs...\n");
 
-        System.out.println(bogies);
+        addBogie(bogieSet, "BG101");
+        addBogie(bogieSet, "BG102");
+        addBogie(bogieSet, "BG103");
+        addBogie(bogieSet, "BG101"); // duplicate
+        addBogie(bogieSet, "BG104");
+        addBogie(bogieSet, "BG102"); // duplicate
 
-        bogies.remove("AC Chair");
+        System.out.println("\nUnique Bogie IDs:");
+        for (String id : bogieSet) {
+            System.out.println(id);
+        }
+    }
 
-        System.out.println(bogies);
-
-        System.out.println(bogies.contains("Sleeper"));
+    public static void addBogie(Set<String> set, String id) {
+        if (set.add(id)) {
+            System.out.println("Added: " + id);
+        } else {
+            System.out.println("Duplicate ignored: " + id);
+        }
     }
 }
