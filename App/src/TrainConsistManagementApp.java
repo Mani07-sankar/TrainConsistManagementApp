@@ -1,41 +1,59 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TrainConsistManagementApp {
 
-    // Linear Search Method
-    public static boolean linearSearch(String[] bogieIds, String key) {
+    // Binary Search Method
+    public static boolean binarySearch(String[] bogieIds, String key) {
 
-        // Traverse array
-        for (int i = 0; i < bogieIds.length; i++) {
+        int low = 0;
+        int high = bogieIds.length - 1;
 
-            // Compare using equals()
-            if (bogieIds[i].equals(key)) {
+        while (low <= high) {
+
+            int mid = (low + high) / 2;
+
+            int result = key.compareTo(bogieIds[mid]);
+
+            if (result == 0) {
                 return true; // Found
+            }
+            else if (result > 0) {
+                low = mid + 1; // Search right half
+            }
+            else {
+                high = mid - 1; // Search left half
             }
         }
 
-        return false; // Not Found
+        return false; // Not found
     }
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Array of bogie IDs
+        // Unsorted bogie IDs
         String[] bogieIds = {
-                "BG101", "BG205", "BG309", "BG412", "BG550"
+                "BG309", "BG101", "BG550", "BG205", "BG412"
         };
 
+        // Step 1: Sort the array (IMPORTANT for Binary Search)
+        Arrays.sort(bogieIds);
+
+        System.out.println("Sorted Bogie IDs:");
+        System.out.println(Arrays.toString(bogieIds));
+
         // User input
-        System.out.println("Enter Bogie ID to search:");
+        System.out.println("\nEnter Bogie ID to search:");
         String searchKey = sc.nextLine();
 
-        // Call search method
-        boolean found = linearSearch(bogieIds, searchKey);
+        // Step 2: Binary Search
+        boolean found = binarySearch(bogieIds, searchKey);
 
         // Output result
         if (found) {
-            System.out.println("Bogie ID " + searchKey + " FOUND in the consist.");
+            System.out.println("Bogie ID " + searchKey + " FOUND.");
         } else {
             System.out.println("Bogie ID " + searchKey + " NOT FOUND.");
         }
