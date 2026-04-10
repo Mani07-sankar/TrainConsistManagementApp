@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="trainconsistapp">
-      <change beforePath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="UC5 – LinkedHashSet" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/UC3/TrackUniqueBogieIDs" />
+        <entry key="$PROJECT_DIR$" value="feature/UC5-PreserveInsertionOrderofBogies" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,7 +62,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/UC4-MaintainOrderedBogieIDs",
+    "git-widget-placeholder": "feature/UC6-MapBogietoCapacity",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -105,13 +103,31 @@
       <option name="project" value="LOCAL" />
       <updated>1775813621093</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="UC4: Maintain Ordered Bogie IDs">
+      <option name="closed" value="true" />
+      <created>1775813860500</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775813860500</updated>
+    </task>
+    <task id="LOCAL-00004" summary="UC5 – LinkedHashSet">
+      <option name="closed" value="true" />
+      <created>1775814060599</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775814060599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="uc3 trainconsistapp" />
     <MESSAGE value="trainconsistapp" />
-    <option name="LAST_COMMIT_MESSAGE" value="trainconsistapp" />
+    <MESSAGE value="UC4: Maintain Ordered Bogie IDs" />
+    <MESSAGE value="UC5 – LinkedHashSet" />
+    <option name="LAST_COMMIT_MESSAGE" value="UC5 – LinkedHashSet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
