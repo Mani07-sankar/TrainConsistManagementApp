@@ -3,8 +3,16 @@ import java.util.Scanner;
 
 public class TrainConsistManagementApp {
 
-    // Binary Search Method
-    public static boolean binarySearch(String[] bogieIds, String key) {
+    // Binary Search with Validation (UC20)
+    public static boolean searchBogie(String[] bogieIds, String key) {
+
+        // ✅ Fail-Fast Check
+        if (bogieIds == null || bogieIds.length == 0) {
+            throw new IllegalStateException("No bogies available in the train. Please add bogies first.");
+        }
+
+        // Ensure sorted before binary search
+        Arrays.sort(bogieIds);
 
         int low = 0;
         int high = bogieIds.length - 1;
@@ -17,12 +25,10 @@ public class TrainConsistManagementApp {
 
             if (result == 0) {
                 return true; // Found
-            }
-            else if (result > 0) {
-                low = mid + 1; // Search right half
-            }
-            else {
-                high = mid - 1; // Search left half
+            } else if (result > 0) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
             }
         }
 
@@ -33,29 +39,23 @@ public class TrainConsistManagementApp {
 
         Scanner sc = new Scanner(System.in);
 
-        // Unsorted bogie IDs
-        String[] bogieIds = {
-                "BG309", "BG101", "BG550", "BG205", "BG412"
-        };
+        // Try changing this to {} to test exception
+        String[] bogieIds = {"BG101", "BG205", "BG309"};
 
-        // Step 1: Sort the array (IMPORTANT for Binary Search)
-        Arrays.sort(bogieIds);
+        System.out.println("Enter Bogie ID to search:");
+        String key = sc.nextLine();
 
-        System.out.println("Sorted Bogie IDs:");
-        System.out.println(Arrays.toString(bogieIds));
+        try {
+            boolean found = searchBogie(bogieIds, key);
 
-        // User input
-        System.out.println("\nEnter Bogie ID to search:");
-        String searchKey = sc.nextLine();
+            if (found) {
+                System.out.println("Bogie ID " + key + " FOUND.");
+            } else {
+                System.out.println("Bogie ID " + key + " NOT FOUND.");
+            }
 
-        // Step 2: Binary Search
-        boolean found = binarySearch(bogieIds, searchKey);
-
-        // Output result
-        if (found) {
-            System.out.println("Bogie ID " + searchKey + " FOUND.");
-        } else {
-            System.out.println("Bogie ID " + searchKey + " NOT FOUND.");
+        } catch (IllegalStateException e) {
+            System.out.println("ERROR: " + e.getMessage());
         }
 
         sc.close();
