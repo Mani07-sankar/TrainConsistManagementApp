@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="(UC10 – reduce for Total Seats)" />
+    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="(UC11 – Regex Validation)">
+      <change beforePath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/UC10-CountTotalSeatsinTrain" />
+        <entry key="$PROJECT_DIR$" value="feature/UC11-ValidateTrainID&amp;CargoCodes" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +64,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/UC11-ValidateTrainID&&CargoCodes",
+    "git-widget-placeholder": "feature/UC12-SafetyComplianceCheckforGoodsBogies",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -159,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775814763854</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="(UC11 – Regex Validation)">
+      <option name="closed" value="true" />
+      <created>1775815058183</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1775815058183</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,7 +182,8 @@
     <MESSAGE value="(UC8 – Stream Filtering)" />
     <MESSAGE value="UC9 – Grouping Bogies by Type)" />
     <MESSAGE value="(UC10 – reduce for Total Seats)" />
-    <option name="LAST_COMMIT_MESSAGE" value="(UC10 – reduce for Total Seats)" />
+    <MESSAGE value="(UC11 – Regex Validation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="(UC11 – Regex Validation)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
