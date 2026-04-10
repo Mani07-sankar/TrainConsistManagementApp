@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="(UC7 – Comparator Sorting)">
-      <change beforePath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="(UC10 – reduce for Total Seats)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/UC7-SortBogiesbyCapacity" />
+        <entry key="$PROJECT_DIR$" value="feature/UC10-CountTotalSeatsinTrain" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,7 +62,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature/UC8-FilterPassengerBogiesUsingStreams",
+    "git-widget-placeholder": "feature/UC11-ValidateTrainID&&CargoCodes",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -137,7 +135,31 @@
       <option name="project" value="LOCAL" />
       <updated>1775814352225</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="(UC8 – Stream Filtering)">
+      <option name="closed" value="true" />
+      <created>1775814489262</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775814489262</updated>
+    </task>
+    <task id="LOCAL-00008" summary="UC9 – Grouping Bogies by Type)">
+      <option name="closed" value="true" />
+      <created>1775814630414</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775814630414</updated>
+    </task>
+    <task id="LOCAL-00009" summary="(UC10 – reduce for Total Seats)">
+      <option name="closed" value="true" />
+      <created>1775814763854</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775814763854</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,7 +169,10 @@
     <MESSAGE value="UC5 – LinkedHashSet" />
     <MESSAGE value="(UC6 – HashMap)" />
     <MESSAGE value="(UC7 – Comparator Sorting)" />
-    <option name="LAST_COMMIT_MESSAGE" value="(UC7 – Comparator Sorting)" />
+    <MESSAGE value="(UC8 – Stream Filtering)" />
+    <MESSAGE value="UC9 – Grouping Bogies by Type)" />
+    <MESSAGE value="(UC10 – reduce for Total Seats)" />
+    <option name="LAST_COMMIT_MESSAGE" value="(UC10 – reduce for Total Seats)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
