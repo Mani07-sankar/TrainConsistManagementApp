@@ -1,44 +1,27 @@
+import java.util.Arrays;
+
 public class TrainConsistManagementApp {
-
-    // Bubble Sort Method
-    public static void bubbleSort(int[] arr) {
-
-        int n = arr.length;
-
-        // Outer loop for passes
-        for (int i = 0; i < n - 1; i++) {
-
-            // Inner loop for comparison
-            for (int j = 0; j < n - i - 1; j++) {
-
-                // Compare adjacent elements
-                if (arr[j] > arr[j + 1]) {
-
-                    // Swap
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
-    }
 
     public static void main(String[] args) {
 
-        // Passenger bogie capacities
-        int[] capacities = {72, 56, 24, 70, 60};
+        // Array of bogie names
+        String[] bogieNames = {
+                "Sleeper",
+                "AC Chair",
+                "First Class",
+                "General",
+                "Luxury"
+        };
 
+        // Before sorting
         System.out.println("Before Sorting:");
-        for (int c : capacities) {
-            System.out.print(c + " ");
-        }
+        System.out.println(Arrays.toString(bogieNames));
 
-        // Apply Bubble Sort
-        bubbleSort(capacities);
+        // Sort using built-in method
+        Arrays.sort(bogieNames);
 
-        System.out.println("\n\nAfter Sorting (Ascending Order):");
-        for (int c : capacities) {
-            System.out.print(c + " ");
-        }
+        // After sorting
+        System.out.println("\nAfter Sorting (Alphabetical Order):");
+        System.out.println(Arrays.toString(bogieNames));
     }
 }
