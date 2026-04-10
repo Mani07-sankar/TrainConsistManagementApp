@@ -1,12 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+// Custom Exception Class
+class InvalidCapacityException extends Exception {
+    public InvalidCapacityException(String message) {
+        super(message);
+    }
+}
 
-class Bogie {
+// Passenger Bogie Class
+class PassengerBogie {
     String name;
     int capacity;
 
-    Bogie(String name, int capacity) {
+    // Constructor with validation
+    PassengerBogie(String name, int capacity) throws InvalidCapacityException {
+        if (capacity <= 0) {
+            throw new InvalidCapacityException("Capacity must be greater than zero");
+        }
         this.name = name;
         this.capacity = capacity;
     }
@@ -16,45 +24,29 @@ class Bogie {
     }
 }
 
+// Main Class
 public class TrainConsistManagementApp {
 
     public static void main(String[] args) {
 
-        List<Bogie> bogieList = new ArrayList<>();
+        try {
+            // Valid Bogies
+            PassengerBogie b1 = new PassengerBogie("Sleeper", 72);
+            PassengerBogie b2 = new PassengerBogie("AC Chair", 60);
 
-        // Create large dataset
-        for (int i = 0; i < 100000; i++) {
-            bogieList.add(new Bogie("Bogie" + i, (i % 100) + 20));
+            System.out.println("Valid Bogies Created:");
+            System.out.println(b1);
+            System.out.println(b2);
+
+            // Invalid Bogie (will throw exception)
+            PassengerBogie b3 = new PassengerBogie("First Class", 0);
+
+            System.out.println(b3); // won't execute
+
+        } catch (InvalidCapacityException e) {
+            System.out.println("Error: " + e.getMessage());
         }
 
-        // ---------------- LOOP APPROACH ----------------
-        long startLoop = System.nanoTime();
-
-        List<Bogie> loopResult = new ArrayList<>();
-        for (Bogie b : bogieList) {
-            if (b.capacity > 60) {
-                loopResult.add(b);
-            }
-        }
-
-        long endLoop = System.nanoTime();
-        long loopTime = endLoop - startLoop;
-
-        // ---------------- STREAM APPROACH ----------------
-        long startStream = System.nanoTime();
-
-        List<Bogie> streamResult = bogieList.stream()
-                .filter(b -> b.capacity > 60)
-                .collect(Collectors.toList());
-
-        long endStream = System.nanoTime();
-        long streamTime = endStream - startStream;
-
-        // ---------------- OUTPUT ----------------
-        System.out.println("Loop Result Size: " + loopResult.size());
-        System.out.println("Stream Result Size: " + streamResult.size());
-
-        System.out.println("\nLoop Execution Time (ns): " + loopTime);
-        System.out.println("Stream Execution Time (ns): " + streamTime);
+        System.out.println("\nProgram continues safely...");
     }
 }
