@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/Feature_UC2_AddPassengerBogies.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/Feature_UC2_AddPassengerBogies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/App/Feature_UC1_InitializeTrainAndDisplayConsistSummary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/App/Feature_UC2_AddPassengerBogies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/App/Main.class" beforeDir="false" />
+    <list default="true" id="969fd60a-2016-4fd6-86d5-acd995882529" name="Changes" comment="trainconsistapp">
+      <change beforePath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/TrainConsistManagementApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/UC3/TrackUniqueBogieIDs" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,12 +36,12 @@
     &quot;assignee&quot;: &quot;anushka8singh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mani07-sankar/TrainConsistManagementApp.git&quot;,
-    &quot;accountId&quot;: &quot;964ecc4c-f375-4289-8d38-410b089624c2&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Mani07-sankar/TrainConsistManagementApp.git",
+    "accountId": "9319b2e8-9d38-4519-afad-e91d89d883e1"
   }
-}</component>
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -68,7 +64,7 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feature__UC3__TrackUniqueBogieIDs",
+    "git-widget-placeholder": "feature/UC4-MaintainOrderedBogieIDs",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
@@ -93,7 +89,29 @@
       <option name="presentableId" value="Default" />
       <updated>1775126764258</updated>
     </task>
+    <task id="LOCAL-00001" summary="uc3 trainconsistapp">
+      <option name="closed" value="true" />
+      <created>1775813380631</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775813380631</updated>
+    </task>
+    <task id="LOCAL-00002" summary="trainconsistapp">
+      <option name="closed" value="true" />
+      <created>1775813621093</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775813621093</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="uc3 trainconsistapp" />
+    <MESSAGE value="trainconsistapp" />
+    <option name="LAST_COMMIT_MESSAGE" value="trainconsistapp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
